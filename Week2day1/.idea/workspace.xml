@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d08d468-182c-486d-abc8-ee64077deb84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../PracticeLambdaExp/src/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PracticeLambdaExp/src/LambdaScopeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PhoneDirectory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Question1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Question2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week1day3_5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week1day3_5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week1Day4_1/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week1Day4_1/src/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week1Day4_1/src/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week1Day4_1/src/Bird.java" afterDir="false" />
@@ -113,7 +108,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="745" />
     <option name="y" value="23" />
     <option name="width" value="935" />
@@ -146,6 +141,9 @@
       </pane>
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -190,8 +188,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="745" y="23" width="935" height="954" extended-state="0" />
-    <editor active="true" />
+    <frame x="745" y="23" width="935" height="954" extended-state="1" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
