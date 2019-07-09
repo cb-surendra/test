@@ -11,8 +11,8 @@ public class Question4 {
         PrintWriter out = null;
 
         try {
-            Scanner scanner = new Scanner(new BufferedReader(new FileReader("src/xanadu.txt")));
-            out = new PrintWriter( new FileWriter("src/result3.txt"));
+            Scanner scanner = new Scanner(new BufferedReader(new FileReader("xanadu.txt")));
+            out = new PrintWriter( new FileWriter("result3.txt"));
 
             int lineNo = 1;
 
@@ -22,15 +22,30 @@ public class Question4 {
                 String str = scanner.nextLine();
 
                 boolean flag = true;
-                int startInd = str.indexOf(word, 0);
 
-                while(startInd != -1 && startInd < word.length()) {
+                /*int startInd = str.indexOf(word, 0);
+                while(startInd != -1 && startInd <= word.length()) {
                     if(flag){
                         System.out.print(lineNo);
                     }
-                    System.out.println(" " + startInd + " " + (startInd+word.length()+1));
+                    System.out.print(" " + startInd + " " + (startInd+word.length()+1));
                     startInd = startInd + word.length();
                     flag = false;
+                }
+                System.out.println();
+                   */
+
+                if( str.contains(word) ){
+
+                    System.out.print(lineNo);
+                    System.out.print(" Found at index: ");
+                    int fromIndex = 0;
+                    while ( (fromIndex = str.indexOf(word, fromIndex)) != -1 ){
+                        System.out.print( "( Start Index : " + fromIndex + " Ending Index :" + (word.length() + fromIndex) + ") " );
+                        fromIndex++;
+                    }
+                    System.out.println();
+
                 }
                 lineNo++;
             }

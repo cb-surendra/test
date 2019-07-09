@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a4522d7-f28e-4091-abbd-8648a448b2bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Question3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Question4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/outagain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/result3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usnumbers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/xanadu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Question4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Question4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week1day3_5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week1day3_5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week2day1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week2day1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week2dya3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week2dya3/.idea/workspace.xml" afterDir="false" />
@@ -48,11 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state>
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -60,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Question4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="412">
+              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/xanadu.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -179,10 +168,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="48" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="954" />
+    <option name="height" value="952" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -211,6 +200,10 @@
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -255,7 +248,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="956" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="952" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -266,12 +259,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13614164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32906976" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3275463" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32906976" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -287,24 +280,10 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/outagain.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/usnumbers.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xanadu.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -345,16 +324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Question3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -365,10 +334,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/outagain.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xanadu.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Question4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="412">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
