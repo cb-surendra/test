@@ -1,58 +1,84 @@
-import jdk.nashorn.internal.parser.JSONParser;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.text.ParseException;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Map;
 
 public class JsonParser {
-    public void show() throws IOException, FileNotFoundException, JSONException {
+    @SuppressWarnings("unchecked")
+    public void jsonFileReading() {
+        JSONParser parser = new JSONParser();
 
-        // parsing file "JSONExample.json"
-        Object obj = new JSONParser().parse(new FileReader("JSONExample.json"));
+        try (Reader reader = new FileReader("src/students-teachers.json")) {
 
-        // typecasting obj to JSONObject
-        JSONObject jo = (JSONObject) obj;
+            //Reading from the json file
+            JSONObject jsonObject = (JSONObject) parser.parse(reader);
 
-        // getting firstName and lastName
-        String firstName = (String) jo.get("firstName");
-        String lastName = (String) jo.get("lastName");
+            JSONObject teachers = (JSONObject)jsonObject.get("Teacher");
+            JSONObject students = (JSONObject)jsonObject.get("Student");
 
-        System.out.println(firstName);
-        System.out.println(lastName);
 
-        // getting age
-        long age = (long) jo.get("age");
-        System.out.println(age);
+            JSONObject objStudent = new JSONObject();
+            objStudent.put("Date Of Joining", students.get("Date Of Joining"));
+            objStudent.put("ID",students.get("ID"));
+            objStudent.put("Marks",students.get("Marks"));
 
-        // getting address
-        Map address = ((Map)jo.get("address"));
 
-        // iterating address Map
-        Iterator<Map.Entry> itr1 = address.entrySet().iterator();
-        while (itr1.hasNext()) {
-            Map.Entry pair = itr1.next();
-            System.out.println(pair.getKey() + " : " + pair.getValue());
-        }
+            JSONArray msg = (JSONArray) students.get("Marks");
+            //System.out.println( "Student Id : " + students.get("ID") + " & Having Joining Date : " + students.get("Date Of Joining"));
+            //System.out.println("Marks scored by the Student : ");
+            Iterator<JSONObject> iterator1 = msg.iterator();
 
-        // getting phoneNumbers
-        JSONArray ja = (JSONArray) jo.get("phoneNumbers");
+//            JSONObject marksAndSubject = new JSONObject();
 
-        // iterating phoneNumbers
-        Iterator itr2 = ja.iterator();
-
-        while (itr2.hasNext())
-        {
-            itr1 = ((Map) itr2.next()).entrySet().iterator();
-            while (itr1.hasNext()) {
-                Map.Entry pair = itr1.next();
-                System.out.println(pair.getKey() + " : " + pair.getValue());
+            ArrayList< JSONObject > arrayListMarksAndSubject = new ArrayList<>();
+            while (iterator1.hasNext()) {
+                JSONObject temp = (JSONObject) iterator1.next();
+                arrayListMarksAndSubject.add( temp );
+                //System.out.println("Subject : " + temp.get("Subject") + " & Mark : " + temp.get("Mark"));
             }
+
+            objStudent.put("Marks", arrayListMarksAndSubject);
+            //System.out.println();
+
+            //System.out.println("Classes Taught by the Teacher");
+
+            JSONArray cls = (JSONArray) teachers.get("Classes Taking Care Of");
+
+            Iterator<JSONObject> iterator2 = cls.iterator();
+            while (iterator2.hasNext()) {
+                System.out.print(iterator2.next() + " ");
+            }
+
+            JSONObject objTeacher = new JSONObject();
+            objTeacher.put("Classes Taking Care Of", teachers.get("Classes Taking Care Of"));
+            objTeacher.put("Date Of Joining", teachers.get("Date Of Joining"));
+            objTeacher.put("ID", teachers.get("ID"));
+            objTeacher.put("Salary", teachers.get("Salary"));
+
+
+            //writing into the json file
+            Writer write = new FileWriter("src/newfile.json");
+            JSONObject parentObj = new JSONObject();
+
+            parentObj.put("Student", objStudent);
+            parentObj.put("Teachers", objTeacher);
+
+            System.out.println( objStudent.toString() );
+            System.out.println( objTeacher.toString() );
+            System.out.println( parentObj.toString() );
+
+            write.write(parentObj.toJSONString());
+            //write.write(parentObj.toString());
+            write.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
     }
 }

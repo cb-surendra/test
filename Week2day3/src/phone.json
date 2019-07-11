@@ -1,0 +1,29 @@
+{
+  "UserDetails" :
+  [
+    {
+      "Name":"ljkkj",
+      "Address":"colsdf",
+      "PhoneNo":"80457495",
+      "Tag":"HOME"
+    },
+    {
+      "Name" : "surendra",
+      "Address" : "hbad",
+      "PhoneNo" : "77718857",
+      "Tag" : "HOME",
+    },
+    {
+      "Name": "surendra",
+      "Address": "hbad",
+      "PhoneNo": "77718857",
+      "Tag": "HOME"
+    },
+    {
+      "Name": "sdfsd",
+      "Address":"delhi",
+      "PhoneNo":"345786435",
+      "Tag":"WORK"
+    }
+  ]
+}

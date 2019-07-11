@@ -1,9 +1,22 @@
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException, FileNotFoundException{
+    public static void main(String[] args) throws IOException {
+        JsonParser jp = new JsonParser();
+        //jp.jsonFileReading();
+
+        JsonPhoneHandling jfh = new JsonPhoneHandling();
+        //jfh.show();
+
+        Week2day5 test = new Week2day5();
+        test.show();
+    }
+
+    //Maintaining the phone directory with the help of JSON File
+
+    //Maintaining the phone directory with help of the CSV file
+    /*public static void main(String[] args) throws IOException, FileNotFoundException{
         System.out.println("Hello World!");
         BufferedReader in = null;
         PrintWriter out = null;
@@ -46,7 +59,7 @@ public class Main {
                 Map<Integer, Tag> m = new HashMap<Integer, Tag>();
                 /*Integer number = Integer.parseInt(args[2]);
                 Tag t = Tag.valueOf(arg[3]);
-                */
+
 
                 m.put(num, t);
                 PhoneDirectory p = new PhoneDirectory(name, add, m);
@@ -54,7 +67,7 @@ public class Main {
                 listPhone.add( p );
 
                 //out.println(list);
-                // */
+                //
             }
 
             for( PhoneDirectory p : listPhone ){
@@ -68,8 +81,9 @@ public class Main {
             /*if (out != null) {
                 out.close();
             }
-             */
+
         }
 
-    }
+    }*/
+
 }
