@@ -19,8 +19,13 @@ public class Week2day5 {
             BufferedReader br = new BufferedReader(new FileReader("src/input.csv"));
             out = new PrintWriter(new FileWriter("src/output.csv"));
 
-            String line = "";
+
+            String headlines = "Customer Id\tSubscription Id\tInvoice Id\tInvoice Date\tStart Date\tAmount\tStatus\tPaid On\tNext Retry\tRefunded Amount\tRecurring\tFirst Invoice\tTax Total\tCustomer Details\t";
+
+            out.println(headlines);
+            /*String line = "";
             while ( (line = br.readLine()) != null){
+
 
                 String[] arg = line.split(",");
                 JSONObject object = new JSONObject();
@@ -40,6 +45,25 @@ public class Week2day5 {
                 out.print( str );
             }
 
+             */
+            String res = "Sub_001\t";
+            res += "Inv_001\t";
+            res += "2015-05-25T10:55:22.820Z\t";
+            res += "2015-05-25T10:55:22.820Z\t";
+            res += "1025\t";
+            res += "Paid\t";
+            res += "2015-05-25T10:55:22.820Z\t";
+            res += "56\t";
+            res += "TRUE\t";
+            res += "FALSE\t";
+            res += "125\t";
+            JSONObject obj = new JSONObject();
+            obj.put("FirstName", "John");
+            obj.put("LastName", "Doe");
+            obj.put("Email", "john@test.com");
+            obj.put("Company", "My BigCamp");
+
+            out.print( res += obj.toString() );
         } finally {
             if (in != null) {
                 in.close();

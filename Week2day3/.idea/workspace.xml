@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2df25ec9-0984-4eaa-a6a9-26348e621a6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/JsonPhoneHandling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Week2day5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/input.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newfile.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/output.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/phone.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FileHandling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FileHandling/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week1day3_5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week1day3_5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week2day1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week2day1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2day3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Week2day3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Week2day3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Week2day3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Week2day3/phone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Week2day3/phone.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Week2day5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Week2day5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week2dya3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week2dya3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week1Day4_1/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week1Day4_1/src/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week1Day4_1/src/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week1Day4_1/src/Bird.java" afterDir="false" />
@@ -69,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Week2day5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+            <state relative-caret-position="348">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#205#213#0" expanded="true" />
@@ -83,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/input.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="183" selection-start-line="1" selection-start-column="183" selection-end-line="1" selection-end-column="183" />
+              <caret line="1" column="183" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="183" />
             </state>
           </provider>
         </entry>
@@ -173,11 +163,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="y" value="54" />
-    <option name="width" value="1630" />
-    <option name="height" value="942" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="967" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -260,7 +249,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="967" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11294261" />
@@ -344,16 +333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/output.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="183" selection-start-line="1" selection-start-column="183" selection-end-line="1" selection-end-column="183" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JsonPhoneHandling.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -368,10 +347,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/input.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="183" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="183" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/output.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Week2day5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        <state relative-caret-position="348">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#205#213#0" expanded="true" />

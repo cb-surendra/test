@@ -1,0 +1,2 @@
+Customer Id	Subscription Id	Invoice Id	Invoice Date	Start Date	Amount	Status	Paid On	Next Retry	Refunded Amount	Recurring	First Invoice	Tax Total	Customer Details	
+Sub_001	Inv_001	2015-05-25T10:55:22.820Z	2015-05-25T10:55:22.820Z	1025	Paid	2015-05-25T10:55:22.820Z	56	TRUE	FALSE	125	{"Company":"My BigCamp","Email":"john@test.com","FirstName":"John","LastName":"Doe"}
