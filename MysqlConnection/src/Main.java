@@ -6,7 +6,7 @@ public class Main {
     public static void main(String args[]){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/login","root","cb-surendra");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/phone_directory","root","cb-surendra");
             //here login is database name, root is username and password
             /*Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("select * from loginDetails");
@@ -53,11 +53,29 @@ public class Main {
              */
 
             String query = "select * from loginDetails";
-            PreparedStatement preparedStatement = con.prepareStatement(query);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            System.out.println("Username\tpassword");
+            String name = "ab";
+            //Retrieve the details of the person(s) matching the given name. If there are more than one person matching the given name, it should list them all.
+            /*String query2 = "select userDetails.userId, userDetails.userName, phoneNumbers.phoneNumber, phoneNumbers.tag from userDetails " +
+                    "inner join phoneNumbers on phoneNumbers.userId = userDetails.userId where userDetails.userName like " + "'" + name + "';";
+
+             */
+            int num = 102;
+            /*String query2 = "select userDetails.userId, userDetails.userName, userDetails.userId, phoneNumbers.phoneNumber, phoneNumbers.tag from userDetails\n" +
+                    "\tinner join phoneNumbers on phoneNumbers.userId = userDetails.userId where phoneNumbers.phoneNumber = " + num + ";";
+
+             */
+            //PreparedStatement preparedStatement = con.prepareStatement(query);
+
+            //Retrieve the details of the person(s) by looking for partial match also.
+            String query2 = "select userDetails.userId, userDetails.userName, userDetails.userId, phoneNumbers.phoneNumber, phoneNumbers.tag from userDetails\n" +
+                    "\tinner join phoneNumbers on phoneNumbers.userId = userDetails.userId where userDetails.userName like '"+ name +"%';";
+
+            PreparedStatement preparedStatement2 = con.prepareStatement(query2);
+
+            ResultSet resultSet = preparedStatement2.executeQuery();
+            System.out.println("userId\tuserName\tuserPhoneNo\tTag to Phone Number");
             while( resultSet.next()){
-                System.out.println( resultSet.getInt(1) + "\t" + resultSet.getString(2));
+                System.out.println( resultSet.getInt(1) + "\t" + resultSet.getString(2) + "\t" + resultSet.getInt(3) + "\t" + resultSet.getString(4));
             }
             con.close();
         }catch(Exception e){
